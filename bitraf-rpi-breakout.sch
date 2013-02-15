@@ -408,143 +408,6 @@ Based on the following sources:
 </deviceset>
 </devicesets>
 </library>
-<library name="relay">
-<description>&lt;b&gt;Relays&lt;/b&gt;&lt;p&gt;
-&lt;ul&gt;
-&lt;li&gt;Eichhoff
-&lt;li&gt;Finder
-&lt;li&gt;Fujitsu
-&lt;li&gt;HAMLIN
-&lt;li&gt;OMRON
-&lt;li&gt;Matsushita
-&lt;li&gt;NAiS
-&lt;li&gt;Siemens
-&lt;li&gt;Schrack
-&lt;/ul&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="JS-M">
-<description>&lt;b&gt;Automotive Ultra-Miniature Power Relay&lt;/b&gt; NAiS&lt;p&gt;
-Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
-<wire x1="-10.9" y1="7.2904" x2="-10.2904" y2="7.9" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-10.2904" y1="7.9" x2="10.2904" y2="7.9" width="0.2032" layer="21"/>
-<wire x1="10.2904" y1="7.9" x2="10.9" y2="7.2904" width="0.2032" layer="21" curve="-90"/>
-<wire x1="10.9" y1="7.2904" x2="10.9" y2="-7.2904" width="0.2032" layer="21"/>
-<wire x1="10.9" y1="-7.2904" x2="10.2904" y2="-7.9" width="0.2032" layer="21" curve="-90"/>
-<wire x1="10.2904" y1="-7.9" x2="-10.2904" y2="-7.9" width="0.2032" layer="21"/>
-<wire x1="-10.2904" y1="-7.9" x2="-10.9" y2="-7.2904" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-10.9" y1="-7.2904" x2="-10.9" y2="7.2904" width="0.2032" layer="21"/>
-<pad name="C" x="8.7" y="0" drill="1.3" rot="R180"/>
-<pad name="1" x="6.7" y="6" drill="1.3" rot="R180"/>
-<pad name="2" x="6.7" y="-6" drill="1.3" rot="R180"/>
-<pad name="NO" x="-5.5" y="6" drill="1.3" rot="R180"/>
-<pad name="NC" x="-5.5" y="-6" drill="1.3" rot="R180"/>
-<text x="-8.89" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-8.89" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="K">
-<wire x1="-3.81" y1="-1.905" x2="-1.905" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-1.905" x2="3.81" y2="1.905" width="0.254" layer="94"/>
-<wire x1="3.81" y1="1.905" x2="1.905" y2="1.905" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="1.905" x2="-3.81" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.905" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1.905" x2="3.81" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="0" y1="1.905" x2="-3.81" y2="1.905" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="-1.905" x2="1.905" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="-1.905" x2="0" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.905" x2="0" y2="1.905" width="0.254" layer="94"/>
-<text x="1.27" y="2.921" size="1.778" layer="96">&gt;VALUE</text>
-<text x="1.27" y="5.08" size="1.778" layer="95">&gt;PART</text>
-<pin name="2" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-</symbol>
-<symbol name="U">
-<wire x1="3.175" y1="5.08" x2="1.905" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-3.175" y1="5.08" x2="-1.905" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="2.54" y2="5.715" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<circle x="0" y="1.27" radius="0.127" width="0.4064" layer="94"/>
-<text x="2.54" y="0" size="1.778" layer="95">&gt;PART</text>
-<pin name="O" x="5.08" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="S" x="-5.08" y="5.08" visible="pad" length="short" direction="pas"/>
-<pin name="P" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="JS-M1*" prefix="K">
-<description>&lt;b&gt;Automotive Ultra-Miniature Power Relay&lt;/b&gt; NAiS&lt;p&gt;
-Source: http://www.mew-europe.com/.. en_ds_61211_0000.pdf</description>
-<gates>
-<gate name="1" symbol="K" x="-7.62" y="0" addlevel="must"/>
-<gate name="2" symbol="U" x="10.16" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="" package="JS-M">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-<connect gate="2" pin="O" pad="NC"/>
-<connect gate="2" pin="P" pad="C"/>
-<connect gate="2" pin="S" pad="NO"/>
-</connects>
-<technologies>
-<technology name="-12V-4">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="JSM1-12V-4" constant="no"/>
-<attribute name="OC_FARNELL" value="910338" constant="no"/>
-<attribute name="OC_NEWARK" value="13P4552" constant="no"/>
-</technology>
-<technology name="-12V-5">
-<attribute name="MF" value="FARNELL" constant="no"/>
-<attribute name="MPN" value="JSM1-12V-5" constant="no"/>
-<attribute name="OC_FARNELL" value="910351" constant="no"/>
-<attribute name="OC_NEWARK" value="14J1764" constant="no"/>
-</technology>
-<technology name="-9V-4">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-<technology name="-9V-5">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-<technology name="F-12V-4">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-<technology name="F-12V-5">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-<technology name="F-9V-4">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-<technology name="F-9V-5">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="resistor">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -6810,57 +6673,186 @@ RJ45 Jack connectors&lt;br&gt;
  &lt;/ul&gt;
  &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="1X3MTA">
+<package name="1X2MTA">
 <description>&lt;b&gt;AMP MTA connector&lt;/b&gt;</description>
-<wire x1="6.3246" y1="6.35" x2="6.3246" y2="3.81" width="0.4064" layer="21"/>
-<wire x1="6.3246" y1="3.81" x2="6.3246" y2="-3.81" width="0.4064" layer="21"/>
-<wire x1="-6.3754" y1="-3.81" x2="-6.3754" y2="3.81" width="0.4064" layer="21"/>
-<wire x1="-6.3754" y1="3.81" x2="-6.3754" y2="6.35" width="0.4064" layer="21"/>
-<wire x1="-6.3754" y1="6.35" x2="6.3246" y2="6.35" width="0.4064" layer="21"/>
-<wire x1="-6.3754" y1="3.81" x2="6.3246" y2="3.81" width="0.3048" layer="21"/>
-<wire x1="-6.3754" y1="-3.81" x2="6.3246" y2="-3.81" width="0.4064" layer="21"/>
-<pad name="3" x="-3.9878" y="0" drill="1.6764" shape="long" rot="R90"/>
-<pad name="2" x="-0.0254" y="0" drill="1.6764" shape="long" rot="R90"/>
-<pad name="1" x="3.937" y="0" drill="1.6764" shape="long" rot="R90"/>
-<text x="-3.9116" y="-7.0612" size="1.778" layer="25">&gt;NAME</text>
-<text x="-5.5182" y="4.4148" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="3.429" y1="-0.508" x2="4.445" y2="0.508" layer="21"/>
-<rectangle x1="-0.5334" y1="-0.508" x2="0.4826" y2="0.508" layer="21"/>
-<rectangle x1="-4.4958" y1="-0.508" x2="-3.4798" y2="0.508" layer="21"/>
+<wire x1="4.572" y1="6.35" x2="4.572" y2="3.81" width="0.4064" layer="21"/>
+<wire x1="4.572" y1="3.81" x2="4.572" y2="-3.81" width="0.4064" layer="21"/>
+<wire x1="-4.318" y1="-3.81" x2="4.572" y2="-3.81" width="0.4064" layer="21"/>
+<wire x1="-4.318" y1="6.35" x2="4.572" y2="6.35" width="0.4064" layer="21"/>
+<wire x1="-4.318" y1="3.81" x2="4.572" y2="3.81" width="0.3048" layer="21"/>
+<wire x1="-4.318" y1="3.81" x2="-4.318" y2="-3.81" width="0.4064" layer="21"/>
+<wire x1="-4.318" y1="6.35" x2="-4.318" y2="3.81" width="0.4064" layer="21"/>
+<pad name="1" x="1.9812" y="0" drill="1.6764" shape="long" rot="R90"/>
+<pad name="2" x="-1.9812" y="0" drill="1.6764" shape="long" rot="R90"/>
+<text x="-4.3688" y="-6.35" size="1.778" layer="25">&gt;NAME</text>
+<text x="-3.4369" y="4.4148" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="1.4732" y1="-0.508" x2="2.4892" y2="0.508" layer="21"/>
+<rectangle x1="-2.4892" y1="-0.508" x2="-1.4732" y2="0.508" layer="21"/>
 </package>
 </packages>
 <symbols>
-<symbol name="MTA-03">
+<symbol name="MTA-02">
 <wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="6.35" y1="-1.905" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="6.35" y2="1.27" width="0.254" layer="94"/>
-<wire x1="6.35" y1="1.27" x2="6.35" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-1.905" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-1.905" x2="3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="3.81" y2="1.27" width="0.254" layer="94"/>
 <circle x="0" y="0" radius="0.635" width="0.254" layer="94"/>
 <circle x="2.54" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="5.08" y="0" radius="0.635" width="0.254" layer="94"/>
-<text x="7.62" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="7.62" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-2.54" y="-1.27" size="1.27" layer="95">1</text>
 <pin name="1" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="3" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MTA03-156" prefix="J" uservalue="yes">
+<deviceset name="MTA02-156" prefix="J" uservalue="yes">
 <description>&lt;b&gt;AMP connector&lt;/b&gt;</description>
 <gates>
-<gate name="G$2" symbol="MTA-03" x="0" y="0"/>
+<gate name="G$1" symbol="MTA-02" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1X3MTA">
+<device name="" package="1X2MTA">
 <connects>
-<connect gate="G$2" pin="1" pad="1"/>
-<connect gate="G$2" pin="2" pad="2"/>
-<connect gate="G$2" pin="3" pad="3"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="fujitsu-ftr-f3">
+<packages>
+<package name="REED">
+<description>&lt;b&gt;RELAY&lt;/b&gt;&lt;p&gt;</description>
+<pad name="2" x="19.82" y="4.95" drill="1.1" rot="R90" first="yes"/>
+<pad name="1" x="12.82" y="4.95" drill="1.1" rot="R90"/>
+<pad name="3" x="4.02" y="1.25" drill="0.5" rot="R90"/>
+<pad name="4" x="1.32" y="1.25" drill="0.5" rot="R180"/>
+<text x="0.815" y="7.615" size="1.27" layer="25">&gt;NAME</text>
+<text x="8.7" y="7.615" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="0" y2="7" width="0.254" layer="21"/>
+<wire x1="0" y1="7" x2="20.5" y2="7" width="0.254" layer="21"/>
+<wire x1="20.5" y1="7" x2="20.5" y2="0" width="0.254" layer="21"/>
+<wire x1="20.5" y1="0" x2="0" y2="0" width="0.254" layer="21"/>
+<wire x1="12.8" y1="4.1" x2="12.8" y2="3.4" width="0.127" layer="21"/>
+<wire x1="12.8" y1="3.4" x2="15.7" y2="3.4" width="0.127" layer="21"/>
+<wire x1="15.7" y1="3.4" x2="15.7" y2="2.6" width="0.127" layer="21"/>
+<wire x1="16.9" y1="3.4" x2="19.8" y2="3.4" width="0.127" layer="21"/>
+<wire x1="19.8" y1="4.1" x2="19.8" y2="3.4" width="0.127" layer="21"/>
+<wire x1="16.9" y1="3.4" x2="16.9" y2="2.6" width="0.127" layer="21"/>
+<wire x1="15.7" y1="2.6" x2="17.2" y2="1.8" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="K-D-SIL">
+<wire x1="-3.81" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="-3.81" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="0.635" x2="-2.54" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0.635" x2="-3.175" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0.635" x2="-1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="-0.635" x2="-2.54" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.635" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0.635" x2="-2.54" y2="0.635" width="0.254" layer="94"/>
+<text x="5.715" y="0" size="1.778" layer="95">&gt;PART</text>
+<text x="5.715" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="3" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="4" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="S-SIL">
+<wire x1="0" y1="2.54" x2="0" y2="5.3975" width="0.4064" layer="94"/>
+<wire x1="0" y1="-5.3975" x2="0" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-2.54" y2="2.54" width="0.4064" layer="94"/>
+<circle x="0" y="-2.54" radius="0.3175" width="0.254" layer="94"/>
+<text x="3.175" y="1.905" size="1.778" layer="95">&gt;PART</text>
+<text x="3.175" y="-0.635" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="0" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="0" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FTR-F3" prefix="K">
+<description>&lt;b&gt;RELAY&lt;/b&gt;
+&lt;p&gt;
+For FTR-F3 series:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;FTR-F3AA005E&lt;/li&gt;
+&lt;li&gt;FTR-F3AA006E&lt;/li&gt;
+&lt;li&gt;FTR-F3AA009E&lt;/li&gt;
+&lt;li&gt;FTR-F3AA012E&lt;/li&gt;
+&lt;li&gt;FTR-F3AA018E&lt;/li&gt;
+&lt;li&gt;FTR-F3AA024E&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Datasheet: &lt;a href="http://www.mouser.com/ds/2/164/ftr-f3-15044.pdf"&gt;http://www.mouser.com/ds/2/164/ftr-f3-15044.pdf&lt;/a&gt;.
+&lt;/p&gt;</description>
+<gates>
+<gate name="1" symbol="K-D-SIL" x="0" y="0" addlevel="must"/>
+<gate name="2" symbol="S-SIL" x="17.78" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="REED">
+<connects>
+<connect gate="1" pin="3" pad="3"/>
+<connect gate="1" pin="4" pad="4"/>
+<connect gate="2" pin="1" pad="1"/>
+<connect gate="2" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="FTR-F3AA005E">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MOUSER" value="817-FTR-F3AA005E" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="" constant="no"/>
+<attribute name="OC_NEWARK" value="" constant="no"/>
+</technology>
+<technology name="FTR-F3AA006E">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MOUSER" value="817-FTR-F3AA006E" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="" constant="no"/>
+<attribute name="OC_NEWARK" value="" constant="no"/>
+</technology>
+<technology name="FTR-F3AA009E">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MOUSER" value="817-FTR-F3AA009E" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="" constant="no"/>
+<attribute name="OC_NEWARK" value="" constant="no"/>
+</technology>
+<technology name="FTR-F3AA012E">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MOUSER" value="817-FTR-F3AA012E" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="" constant="no"/>
+<attribute name="OC_NEWARK" value="" constant="no"/>
+</technology>
+<technology name="FTR-F3AA018E">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MOUSER" value="817-FTR-F3AA018E" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="" constant="no"/>
+<attribute name="OC_NEWARK" value="" constant="no"/>
+</technology>
+<technology name="FTR-F3AA024E">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MOUSER" value="817-FTR-F3AA024E" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="" constant="no"/>
+<attribute name="OC_NEWARK" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -6883,7 +6875,6 @@ RJ45 Jack connectors&lt;br&gt;
 <parts>
 <part name="IC1" library="74xx-eu" deviceset="74*595" device="N" technology="HC"/>
 <part name="T1" library="transistor" deviceset="BC547" device=""/>
-<part name="K1" library="relay" deviceset="JS-M1*" device="" technology="-9V-4"/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="0204/7" value="330"/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="0204/7" value="330"/>
 <part name="R3" library="eagle-ltspice" deviceset="R" device="R1206" value="330"/>
@@ -6906,9 +6897,10 @@ RJ45 Jack connectors&lt;br&gt;
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-2X2" device=""/>
-<part name="J1" library="con-amp" deviceset="MTA03-156" device=""/>
+<part name="J1" library="con-amp" deviceset="MTA02-156" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="VCC" device=""/>
+<part name="K1" library="fujitsu-ftr-f3" deviceset="FTR-F3" device="" technology="FTR-F3AA005E"/>
 </parts>
 <sheets>
 <sheet>
@@ -6917,8 +6909,6 @@ RJ45 Jack connectors&lt;br&gt;
 <instances>
 <instance part="IC1" gate="A" x="68.58" y="83.82"/>
 <instance part="T1" gate="G$1" x="157.48" y="35.56"/>
-<instance part="K1" gate="1" x="160.02" y="60.96"/>
-<instance part="K1" gate="2" x="177.8" y="60.96"/>
 <instance part="R1" gate="G$1" x="99.06" y="48.26" rot="R270"/>
 <instance part="R2" gate="G$1" x="88.9" y="48.26" rot="R270"/>
 <instance part="R3" gate="G$1" x="119.38" y="48.26" rot="R270"/>
@@ -6941,9 +6931,11 @@ RJ45 Jack connectors&lt;br&gt;
 <instance part="GND3" gate="1" x="-10.16" y="53.34"/>
 <instance part="GND4" gate="1" x="50.8" y="66.04"/>
 <instance part="JP1" gate="A" x="66.04" y="38.1"/>
-<instance part="J1" gate="G$2" x="208.28" y="63.5" rot="R270"/>
+<instance part="J1" gate="G$1" x="208.28" y="63.5" rot="R270"/>
 <instance part="SUPPLY3" gate="G$1" x="78.74" y="48.26"/>
 <instance part="SUPPLY4" gate="G$1" x="50.8" y="99.06"/>
+<instance part="K1" gate="1" x="160.02" y="60.96"/>
+<instance part="K1" gate="2" x="177.8" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -7110,56 +7102,44 @@ RJ45 Jack connectors&lt;br&gt;
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="K1" gate="1" pin="2"/>
 <pinref part="T1" gate="G$1" pin="C"/>
-<wire x1="160.02" y1="55.88" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="D3" gate="1" pin="A"/>
 <wire x1="160.02" y1="53.34" x2="160.02" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="53.34" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
-<junction x="160.02" y="53.34"/>
+<pinref part="K1" gate="1" pin="4"/>
+<wire x1="160.02" y1="53.34" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="1">
 <segment>
-<pinref part="K1" gate="2" pin="P"/>
-<wire x1="177.8" y1="58.42" x2="177.8" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="50.8" x2="193.04" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="60.96" x2="193.04" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$2" pin="2"/>
-<wire x1="205.74" y1="60.96" x2="193.04" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="50.8" x2="203.2" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="K1" gate="2" pin="2"/>
+<wire x1="177.8" y1="53.34" x2="177.8" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="50.8" x2="203.2" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="60.96" x2="205.74" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="1">
 <segment>
-<pinref part="K1" gate="2" pin="S"/>
-<wire x1="172.72" y1="66.04" x2="170.18" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="66.04" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="71.12" x2="198.12" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="63.5" x2="205.74" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$2" pin="1"/>
-</segment>
-</net>
-<net name="N$18" class="1">
-<segment>
-<pinref part="K1" gate="2" pin="O"/>
-<wire x1="182.88" y1="66.04" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$2" pin="3"/>
-<wire x1="205.74" y1="58.42" x2="195.58" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="58.42" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="71.12" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="63.5" x2="203.2" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="63.5" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="K1" gate="2" pin="1"/>
+<wire x1="177.8" y1="68.58" x2="177.8" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="K1" gate="1" pin="1"/>
-<wire x1="160.02" y1="66.04" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 <pinref part="D3" gate="1" pin="C"/>
 <wire x1="160.02" y1="68.58" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="63.5" x2="147.32" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
-<junction x="160.02" y="68.58"/>
+<pinref part="K1" gate="1" pin="3"/>
+<wire x1="160.02" y1="68.58" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
