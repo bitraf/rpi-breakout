@@ -6729,8 +6729,8 @@ RJ45 Jack connectors&lt;br&gt;
 <packages>
 <package name="REED">
 <description>&lt;b&gt;RELAY&lt;/b&gt;&lt;p&gt;</description>
-<pad name="2" x="19.82" y="2.05" drill="1.1" rot="R90" first="yes"/>
-<pad name="1" x="12.82" y="2.05" drill="1.1" rot="R90"/>
+<pad name="2" x="19.82" y="1.92" drill="1.1" rot="R90" first="yes"/>
+<pad name="1" x="12.82" y="1.92" drill="1.1" rot="R90"/>
 <pad name="3" x="4.02" y="5.75" drill="0.5" rot="R90"/>
 <pad name="4" x="1.32" y="5.75" drill="0.5" rot="R180"/>
 <text x="0.815" y="7.615" size="1.27" layer="25">&gt;NAME</text>
@@ -6739,13 +6739,13 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="0" y1="7" x2="20.5" y2="7" width="0.254" layer="21"/>
 <wire x1="20.5" y1="7" x2="20.5" y2="0" width="0.254" layer="21"/>
 <wire x1="20.5" y1="0" x2="0" y2="0" width="0.254" layer="21"/>
-<wire x1="19.8" y1="2.96" x2="19.8" y2="3.66" width="0.127" layer="21"/>
-<wire x1="19.8" y1="3.66" x2="16.9" y2="3.66" width="0.127" layer="21"/>
-<wire x1="16.9" y1="3.66" x2="16.9" y2="4.46" width="0.127" layer="21"/>
-<wire x1="15.7" y1="3.66" x2="12.8" y2="3.66" width="0.127" layer="21"/>
-<wire x1="12.8" y1="2.96" x2="12.8" y2="3.66" width="0.127" layer="21"/>
-<wire x1="15.7" y1="3.66" x2="15.7" y2="4.46" width="0.127" layer="21"/>
-<wire x1="16.9" y1="4.46" x2="15.4" y2="5.26" width="0.127" layer="21"/>
+<wire x1="19.8" y1="2.83718125" x2="19.8" y2="3.53718125" width="0.127" layer="21"/>
+<wire x1="19.8" y1="3.53718125" x2="16.9" y2="3.53718125" width="0.127" layer="21"/>
+<wire x1="16.9" y1="3.53718125" x2="16.9" y2="4.33718125" width="0.127" layer="21"/>
+<wire x1="15.7" y1="3.53718125" x2="12.8" y2="3.53718125" width="0.127" layer="21"/>
+<wire x1="12.8" y1="2.83718125" x2="12.8" y2="3.53718125" width="0.127" layer="21"/>
+<wire x1="15.7" y1="3.53718125" x2="15.7" y2="4.33718125" width="0.127" layer="21"/>
+<wire x1="16.9" y1="4.33718125" x2="15.4" y2="5.13718125" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
