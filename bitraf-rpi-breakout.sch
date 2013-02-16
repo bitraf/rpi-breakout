@@ -6729,23 +6729,23 @@ RJ45 Jack connectors&lt;br&gt;
 <packages>
 <package name="REED">
 <description>&lt;b&gt;RELAY&lt;/b&gt;&lt;p&gt;</description>
-<pad name="2" x="19.82" y="4.95" drill="1.1" rot="R90" first="yes"/>
-<pad name="1" x="12.82" y="4.95" drill="1.1" rot="R90"/>
-<pad name="3" x="4.02" y="1.25" drill="0.5" rot="R90"/>
-<pad name="4" x="1.32" y="1.25" drill="0.5" rot="R180"/>
+<pad name="2" x="19.82" y="2.05" drill="1.1" rot="R90" first="yes"/>
+<pad name="1" x="12.82" y="2.05" drill="1.1" rot="R90"/>
+<pad name="3" x="4.02" y="5.75" drill="0.5" rot="R90"/>
+<pad name="4" x="1.32" y="5.75" drill="0.5" rot="R180"/>
 <text x="0.815" y="7.615" size="1.27" layer="25">&gt;NAME</text>
 <text x="8.7" y="7.615" size="1.27" layer="27">&gt;VALUE</text>
 <wire x1="0" y1="0" x2="0" y2="7" width="0.254" layer="21"/>
 <wire x1="0" y1="7" x2="20.5" y2="7" width="0.254" layer="21"/>
 <wire x1="20.5" y1="7" x2="20.5" y2="0" width="0.254" layer="21"/>
 <wire x1="20.5" y1="0" x2="0" y2="0" width="0.254" layer="21"/>
-<wire x1="12.8" y1="4.1" x2="12.8" y2="3.4" width="0.127" layer="21"/>
-<wire x1="12.8" y1="3.4" x2="15.7" y2="3.4" width="0.127" layer="21"/>
-<wire x1="15.7" y1="3.4" x2="15.7" y2="2.6" width="0.127" layer="21"/>
-<wire x1="16.9" y1="3.4" x2="19.8" y2="3.4" width="0.127" layer="21"/>
-<wire x1="19.8" y1="4.1" x2="19.8" y2="3.4" width="0.127" layer="21"/>
-<wire x1="16.9" y1="3.4" x2="16.9" y2="2.6" width="0.127" layer="21"/>
-<wire x1="15.7" y1="2.6" x2="17.2" y2="1.8" width="0.127" layer="21"/>
+<wire x1="19.8" y1="2.96" x2="19.8" y2="3.66" width="0.127" layer="21"/>
+<wire x1="19.8" y1="3.66" x2="16.9" y2="3.66" width="0.127" layer="21"/>
+<wire x1="16.9" y1="3.66" x2="16.9" y2="4.46" width="0.127" layer="21"/>
+<wire x1="15.7" y1="3.66" x2="12.8" y2="3.66" width="0.127" layer="21"/>
+<wire x1="12.8" y1="2.96" x2="12.8" y2="3.66" width="0.127" layer="21"/>
+<wire x1="15.7" y1="3.66" x2="15.7" y2="4.46" width="0.127" layer="21"/>
+<wire x1="16.9" y1="4.46" x2="15.4" y2="5.26" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6931,7 +6931,7 @@ Datasheet: &lt;a href="http://www.mouser.com/ds/2/164/ftr-f3-15044.pdf"&gt;http:
 <instance part="GND3" gate="1" x="-10.16" y="53.34"/>
 <instance part="GND4" gate="1" x="50.8" y="66.04"/>
 <instance part="JP1" gate="A" x="66.04" y="38.1"/>
-<instance part="J1" gate="G$1" x="208.28" y="63.5" rot="R270"/>
+<instance part="J1" gate="G$1" x="208.28" y="60.96" rot="MR90"/>
 <instance part="SUPPLY3" gate="G$1" x="78.74" y="48.26"/>
 <instance part="SUPPLY4" gate="G$1" x="50.8" y="99.06"/>
 <instance part="K1" gate="1" x="160.02" y="60.96"/>
@@ -7117,18 +7117,18 @@ Datasheet: &lt;a href="http://www.mouser.com/ds/2/164/ftr-f3-15044.pdf"&gt;http:
 <pinref part="K1" gate="2" pin="2"/>
 <wire x1="177.8" y1="53.34" x2="177.8" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="50.8" x2="203.2" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="60.96" x2="205.74" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="60.96" x2="203.2" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="1">
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="71.12" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="63.5" x2="203.2" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="63.5" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="K1" gate="2" pin="1"/>
 <wire x1="177.8" y1="68.58" x2="177.8" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="63.5" x2="205.74" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
