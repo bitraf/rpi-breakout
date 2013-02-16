@@ -6875,10 +6875,10 @@ Datasheet: &lt;a href="http://www.mouser.com/ds/2/164/ftr-f3-15044.pdf"&gt;http:
 <parts>
 <part name="IC1" library="74xx-eu" deviceset="74*595" device="N" technology="HC"/>
 <part name="T1" library="transistor" deviceset="BC547" device=""/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="0204/7" value="330"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="0204/7" value="330"/>
-<part name="R3" library="eagle-ltspice" deviceset="R" device="R1206" value="330"/>
-<part name="R4" library="eagle-ltspice" deviceset="R" device="R1206" value="330"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="0204/7" value="820"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="0204/7" value="820"/>
+<part name="R3" library="eagle-ltspice" deviceset="R" device="R1206" value="820"/>
+<part name="R4" library="eagle-ltspice" deviceset="R" device="R1206" value="820"/>
 <part name="D1" library="diode" deviceset="ZENER-DIODE" device="ZD-7.5" value="3.3V"/>
 <part name="D2" library="diode" deviceset="ZENER-DIODE" device="ZD-7.5" value="3.3V"/>
 <part name="LED1" library="led" deviceset="LED" device="3MM"/>
