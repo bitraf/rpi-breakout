@@ -6866,7 +6866,7 @@ Datasheet: &lt;a href="http://www.mouser.com/ds/2/164/ftr-f3-15044.pdf"&gt;http:
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
-<clearance class="0" value="0.355"/>
+<clearance class="0" value="0.2032"/>
 </class>
 <class number="1" name="power" width="1" drill="0">
 <clearance class="1" value="0.355"/>
@@ -7109,6 +7109,7 @@ Datasheet: &lt;a href="http://www.mouser.com/ds/2/164/ftr-f3-15044.pdf"&gt;http:
 <wire x1="147.32" y1="53.34" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="K1" gate="1" pin="4"/>
 <wire x1="160.02" y1="53.34" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
+<junction x="160.02" y="53.34"/>
 </segment>
 </net>
 <net name="N$16" class="1">
@@ -7140,6 +7141,7 @@ Datasheet: &lt;a href="http://www.mouser.com/ds/2/164/ftr-f3-15044.pdf"&gt;http:
 <wire x1="147.32" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="K1" gate="1" pin="3"/>
 <wire x1="160.02" y1="68.58" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
+<junction x="160.02" y="68.58"/>
 </segment>
 <segment>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
@@ -7205,6 +7207,17 @@ Datasheet: &lt;a href="http://www.mouser.com/ds/2/164/ftr-f3-15044.pdf"&gt;http:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="108,1,160.02,53.34,N$15,,,,,"/>
+<approved hash="108,1,160.02,68.58,VCC,,,,,"/>
+<approved hash="115,1,99.3817,36.83,LED1,,,,,"/>
+<approved hash="115,1,89.2217,36.83,LED2,,,,,"/>
+<approved hash="115,1,109.542,36.83,LED3,,,,,"/>
+<approved hash="115,1,119.702,36.83,LED4,,,,,"/>
+<approved hash="115,1,0,72.1953,SV1,,,,,"/>
+<approved hash="115,1,64.7277,40.7712,JP1,,,,,"/>
+<approved hash="115,1,206.036,63.6201,J1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
